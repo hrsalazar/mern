@@ -1,0 +1,14 @@
+import { render } from "react-testing-library";
+import "dom-testing-library/extend-expect";
+
+test("Token component receives props and then renders text", () => {
+  //
+  const { getByTestId } = render(<Token text="Random token of the day" />);
+
+  expect(getByTestId("token-text")).toHaveTextContent(
+    "Random Token of the day"
+  );
+});
+
+
+export default ({ text }) => <div data-testid="token-text">{text}</div>;

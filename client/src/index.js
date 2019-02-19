@@ -1,9 +1,11 @@
 //Load our root component into the DOM
-
+import 'materialize-css/dist/css/materialize.min.css';
 import React from 'react';
 import ReactDom from 'react-dom';
 import {Provider} from 'react-redux';
 import {createStore, applyMiddleware} from 'redux';
+
+
 
 import App from './components/App.js';
 import reducers from './reducers';

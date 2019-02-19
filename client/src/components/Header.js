@@ -4,7 +4,14 @@ class Header extends Component{
 
     render() {
         return(
-            <h2> Header </h2>
+            <nav>
+                <div className="nav-wrapper">
+                    <a href="/" className="left brand-logo">Emaily</a>
+                    <ul className="right">
+                        <li><a href="#">Loggin with Google</a></li>
+                    </ul>
+                </div>
+            </nav>
         );
     }
 }

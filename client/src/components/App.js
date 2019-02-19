@@ -11,7 +11,7 @@ const Landing  = () => <h2>Landing</h2>
 //In JSX the prop exact or exact={true} are the same
 const App = () => {
     return (
-        <div>
+        <div className="container">
             <BrowserRouter>
                 <div>
                     <Header />
